@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hover.css">
+    
+    <title>Our Gaming Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5a5a5a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+
+        header {
+            background-image: url('futuristic-light-red-blue-gaming-header-social-media-banner-template_136469-1324.avif');
+            background-color: #333;
+            color: white;
+            padding-bottom: 229px;
+            text-align: center;
+            background-size: cover;
+            /* Ensure the background image covers the entire header */
+            background-position: center;
+            /* Center the background image */
+        }
+
+
+
+
+
+        section {
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .featured-game,
+    .event,
+    article {
+        width: 300px;
+        margin: 20px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-game img,
+    .event img,
+    article img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #f44336;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #ccc;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+        h2 {
+            color: #f44336;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .featured-game {
+            margin-top: 20px;
+        }
+
+        .featured-game img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+        }
+
+        .search-bar input {
+            border: none;
+            padding: 8px;
+            font-size: 14px;
+            width: 150px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #f44336;
+            /* Gaming-inspired red color */
+            color: white;
+            border: none;
+            padding: 8px 10px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hover styles for the search button */
+        .search-bar button:hover {
+            background-color: #ff6659;
+            /* Lighter red on hover */
+        }
+
+        /* Focus styles for the input */
+        .search-bar input:focus {
+            outline: none;
+            border: 2px solid #f44336;
+            /* Red border on focus */
+        }
+
+        /* Transition for smooth hover effect */
+        .search-bar button,
+        .search-bar input {
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        }
+
+
+        nav {
+            background-color: #ebc90b;
+            color: white;
+            padding: 6px;
+            text-align: center;
+            box-shadow: #eb8787 0px 0px 17px 11px;
+
+        }
+
+        nav:hover {
+            transition: 0.5s all;
+            box-shadow: #eb8787 inset 0px 0px 17px 11px;
+        }
+
+        nav a {
+            
+            text-decoration: underline;
+            color: blue;
+            font-size: 26px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            position: relative;
+            /* Add relative positioning */
+        }
+
+        nav a:hover {
+            box-shadow: yellow 0px 0px 17px 11px ;
+            background-color: red;
+            font-size: 30px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-right: 7px solid green;
+            border-top: 4px solid green;
+            border-bottom: 4px dashed green;
+            border-left: 4px dashed green;
+            transition: 0.5s all;
+            color: orange;
+            /* Change the color as per your preference */
+            text-decoration: underline;
+            /* Example: Add underline on hover */
+
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 33px;
+        }
+
+        h3 {
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 14px;
+        }
+
+        p {
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        blockquote {
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        pre {
+            font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 18.5714px;
+
+        }
+
+
+
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            background: repeating-linear-gradient(345deg, #d10b0b, black 100px);
+}
+
+        
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a img {
+    position: relative;
+    top: 117px; /* Adjust the percentage as needed */
+    left: 0; /* Adjust as needed or remove for centering */
+    width: 100px; /* Adjust the percentage as needed */
+    margin: -52px auto; /* Center the image horizontally */
+    display: block; /* Remove any default inline spacing */
+}
+
+img:hover {
+    box-shadow: #c00404 0px 0px 17px 11px;
+}
+
+/* Media query for smaller screens (adjust as needed) */
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="Perfect PHOTO.png" alt="LOGO"></a>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="games.html">Games</a> |
+        <a href="store.html">Store</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="calculator.html">Calculator</a> 
+    </nav>
+
+
+
+
+
+    <section>
+        <h2>Featured Games</h2>
+        <div class="section-content">
+            <div class="featured-game">
+                
+                    <img src="temple run.jpg" alt="Featured Game 1">
+
+              
+                <h3>Temple Run</h3>
+                <p>Every ons kown about this game but!! I am telling you This game is hacked</p>
+            </div>
+            <div class="featured-game">
+                
+
+                    <img src="cut rope.webp" alt="Featured Game 2">
+                
+                <h3>Cut Rope</h3>
+                <p>Every ons kown about this game but!! I am telling you This game is hacked</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Latest News</h2>
+        <div class="section-content">
+            <article>
+                <img src="Perfect PHOTO.png" alt="Latest News 1">
+                <h3>Exciting Game Release!</h3>
+                <p>Get ready for the latest game release that's taking the gaming community by storm. Find out what makes it a must-play.</p>
+            </article>
+            <article>
+                <img src="Perfect PHOTO.png" alt="Latest News 2">
+                <h3>Industry Updates</h3>
+                <p>Stay informed with the latest industry updates. From technological advancements to trends, we've got the scoop on what's happening in the gaming world.</p>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Upcoming Events</h2>
+        <div class="section-content">
+            <div class="event">
+                <h3>GameCon 2024</h3>
+                <p>Join us at GameCon 2024, the ultimate gaming event of the year. Experience exclusive game previews, meet developers, and connect with fellow gamers.</p>
+                <p>Date: [Event Date]</p>
+            </div>
+            <div class="event">
+                <h3>E-Sports Championship</h3>
+                <p>Witness intense competition at the E-Sports Championship. Top players from around the world will battle it out for glory. Don't miss the excitement!</p>
+                <p>Date: [Event Date]</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Your Gaming Website. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

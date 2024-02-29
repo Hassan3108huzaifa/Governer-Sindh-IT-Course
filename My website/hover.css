@@ -1,0 +1,16 @@
+nav a:hover {
+    background-color: red;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: 7px solid green;
+    border-top: 4px solid green;
+    border-bottom: 4px dashed green;
+    border-left: 4px dashed green;
+    transition: 0.5s all;
+    color: orange; /* Change the color as per your preference */
+    text-decoration: underline; /* Example: Add underline on hover */
+    
+     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 33px; } h3 { font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 14px; } p { font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;
+    
+}
